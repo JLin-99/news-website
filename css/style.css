@@ -66,6 +66,59 @@ h6 {
   color: var(--primary-color);
 }
 
+.category {
+  display: inline-block;
+  font-size: .55em;
+  text-transform: uppercase;
+  padding: 0.8em 1.2em;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.category-sports {
+  background-color: var(--sports-color);
+}
+
+.category-ent {
+  background-color: var(--ent-color);
+}
+
+.category-tech {
+  background-color: var(--tech-color);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--dark-color);
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+}
+
+.btn-light {
+  background-color: var(--light-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 /* Navigation */
 #main-nav {
   background-color: #041C32;
@@ -117,4 +170,38 @@ h6 {
 #main-nav .social i {
   color: #787A91;
   margin-right: 0.4em;
+}
+
+/* Showcase */
+#showcase {
+  background-color: #333;
+  padding: 2em;
+  position: relative;
+}
+
+#showcase::before {
+  content: '';
+  background: url('../img/featured.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content p {
+  margin-bottom: 1em;
 }
