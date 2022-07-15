@@ -194,6 +194,10 @@ hr {
   padding: 3em;
 }
 
+.l-heading {
+  font-size: 3em;
+}
+
 .list li {
   padding: 0.2em 0;
   border-bottom: dotted 1px var(--light-color);
@@ -319,6 +323,21 @@ hr {
 
 #home-articles .articles-containter>*:last-child {
   grid-column: 2 / span 2;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-color);
+  padding: 0.3em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  border-radius: 3px;
+}
+
+#article .meta .category {
+  margin-top: 0.8em;
 }
 
 /* Footer */
