@@ -112,26 +112,28 @@ hr {
   display: inline-block;
   border: none;
   background-color: var(--dark-color);
+  color: var(--text-color) !important;
   padding: 0.5em 1.5em;
   border-radius: 5px;
 }
 
 .btn-light {
-  background-color: var(--secondary-color);
+  background-color: var(--light-color);
+  color: var(--primary-color) !important;
 }
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--dark-color);
+  color: var(--dark-color) !important;
 }
 
 .btn-secondary {
   background-color: var(--light-color);
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .btn-block {
@@ -200,6 +202,18 @@ hr {
 
 .list li a:hover {
   color: var(--primary-color)
+}
+
+/* Inner Page Grid Container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+.page-container>*:first-child {
+  grid-row: 1 / span 3;
 }
 
 /* Navigation */
@@ -321,7 +335,6 @@ hr {
 
 #main-footer .footer-containter>*:last-child {
   grid-column: 1 / span 4;
-  padding: 0.5em;
   text-align: center;
   font-size: 0.8em;
 }
